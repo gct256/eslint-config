@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
-    require.resolve("./base.js"),
     "airbnb",
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
+    require.resolve("./base.js"),
     "prettier"
   ],
   settings: {
