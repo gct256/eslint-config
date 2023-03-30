@@ -1,3 +1,8 @@
 .vscode/
 yarn-error.log
 yarn.lock
+sandbox
+.npmrc
+.prettierrc
+pnpm-lock.yaml
+tsconfig.json

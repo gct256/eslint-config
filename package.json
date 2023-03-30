@@ -4,8 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "exports": {
-    ".": "./index.js",
-    "./react": "./react.js"
+    ".": "./use-airbnb-no-react.js",
+    "./react": "./use-airbnb-react.js",
+    "./alternate": "./alternate-no-react.js",
+    "./alternate-react": "./alternate-react.js"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.0",

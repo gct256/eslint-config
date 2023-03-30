@@ -3,6 +3,7 @@ module.exports = {
     "airbnb-base",
     "plugin:@typescript-eslint/recommended",
     require.resolve("./base.js"),
+    require.resolve("./use-airbnb-base.js"),
     "prettier"
   ],
   settings: {

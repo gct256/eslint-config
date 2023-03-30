@@ -43,9 +43,6 @@ module.exports = {
       { exceptAfterSingleLine: true }
     ],
 
-    // 関数は const = ... の形式のみ
-    "func-style": ["error", "expression"],
-
     // 引数のプロパティ変更はNG
     "no-param-reassign": [
       "error",
@@ -99,23 +96,6 @@ module.exports = {
         typedefs: true,
         variables: true,
         enums: true
-      }
-    ],
-
-    // eslint-config-airbnb-base の no-restricted-syntax から ForOfStatement だけ除く
-    "no-restricted-syntax": [
-      "error",
-      {
-        selector: "ForInStatement",
-        message: "The `for` ... `in` statement should not be used."
-      },
-      {
-        selector: "LabeledStatement",
-        message: "The labeled statement should not be used."
-      },
-      {
-        selector: "WithStatement",
-        message: "The `with` statement should not be used."
       }
     ]
   }

@@ -1,0 +1,6 @@
+root: true
+extends:
+  - "../alternate-no-react.js"
+  # - "../alternate-react.js"
+  # - "../use-airbnb-no-react.js"
+  # - "../use-airbnb-react.js"
