@@ -19,6 +19,10 @@ module.exports = {
     sourceType: "module"
   },
 
+  settings: {
+    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
+  },
+
   rules: {
     // コンソールは warn, error 以外は警告
     "no-console": [
