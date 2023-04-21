@@ -13,13 +13,6 @@ module.exports = {
     "prettier"
   ],
 
-  settings: {
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx"]
-      }
-    }
-  },
   rules: {
     // tsxを許可
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],

@@ -20,7 +20,15 @@ module.exports = {
   },
 
   settings: {
-    "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
+    "import/ignore": [
+      "node_modules",
+      "\\.(coffee|scss|css|less|hbs|svg|json)$"
+    ],
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx"]
+      }
+    }
   },
 
   rules: {
