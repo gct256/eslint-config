@@ -17,8 +17,8 @@ Linter configuration for my work.
 ## Install
 
 ```sh
-yarn add -D \
-    git+https://github.com/gct256/eslint-config.git \
+pnpm i -D \
+    git+https://github.com/gct256/eslint-config.git#v1.1.4 \
     @typescript-eslint/eslint-plugin \
     @typescript-eslint/parser \
     eslint \
