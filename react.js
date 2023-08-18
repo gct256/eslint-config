@@ -9,9 +9,10 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
     require.resolve("./base.js"),
-    require.resolve("./alternate-base.js"),
     "prettier"
   ],
+
+  plugins: ["react-refresh"],
 
   rules: {
     // tsxを許可
@@ -27,6 +28,12 @@ module.exports = {
         namedComponents: "function-declaration",
         unnamedComponents: "arrow-function"
       }
+    ],
+
+    // コンポーネントのみexportする（viteなどのHMR対策）
+    "react-refresh/only-export-components": [
+      "warn",
+      { allowConstantExport: true }
     ]
   }
 };

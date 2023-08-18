@@ -6,7 +6,6 @@ module.exports = {
     "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     require.resolve("./base.js"),
-    require.resolve("./alternate-base.js"),
     "prettier"
   ]
 };

@@ -3,9 +3,13 @@ module.exports = {
     browser: true,
     node: true,
     es6: true,
+    es2016: true,
     es2017: true,
+    es2018: true,
+    es2019: true,
     es2020: true,
-    es2021: true
+    es2021: true,
+    es2022: true
   },
 
   parser: "@typescript-eslint/parser",
@@ -17,20 +21,32 @@ module.exports = {
     sourceType: "module"
   },
 
+  settings: {
+    "import/ignore": [
+      "node_modules",
+      "\\.(coffee|scss|css|less|hbs|svg|json)$"
+    ],
+    "import/resolver": {
+      node: {
+        extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx"]
+      }
+    }
+  },
+
   rules: {
-    // console は debug, warn, error のみ
+    // コンソールは warn, error 以外は警告
     "no-console": [
-      "error",
+      "warn",
       {
-        allow: ["debug", "warn", "error"]
+        allow: ["warn", "error"]
       }
     ],
 
-    // いい感じに空行を入れる
+    // いい感じに空行を入れる・改
     "padding-line-between-statements": [
       "error",
       { prev: "*", blankLine: "always", next: "return" },
-      { prev: "export", blankLine: "any", next: "export" },
+      { prev: "*", blankLine: "always", next: "export" },
       { prev: "*", blankLine: "always", next: "if" },
       { prev: "*", blankLine: "always", next: "const" },
       { prev: "const", blankLine: "always", next: "*" },
@@ -41,6 +57,10 @@ module.exports = {
       "error",
       "always",
       { exceptAfterSingleLine: true }
+    ],
+    "@typescript-eslint/padding-line-between-statements": [
+      "error",
+      { prev: "*", blankLine: "always", next: "type" }
     ],
 
     // 引数のプロパティ変更はNG
